@@ -1,5 +1,12 @@
-# test
+## データパイプライン（24Exp_daily PL monitoring）
+
+```mermaid
 flowchart TB
+  subgraph EXCEL["Excel(24Exp_daily PL monitoring)"]
+    XLS["各マスターシート<br/>POS・物流・取引先・カテゴリ等"]
+    COUPON_X["クーポンリストシート"]
+  end
+  %% flowchart TB
   subgraph EXCEL["Excel（24Exp_daily PL monitoring）"]
     XLS["各マスターシート<br/>POS・物流・取引先・カテゴリ等"]
     COUPON_X["クーポンリストシート"]
@@ -55,3 +62,6 @@ flowchart TB
   S4 --> S5
   S3 --> S5
   S5 --> LS
+
+  S5 --> LS
+```
